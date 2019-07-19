@@ -12,9 +12,36 @@ namespace COMP123_S2019_Lab10_300763479
 {
     public partial class StartForm : Form
     {
+
         public StartForm()
         {
             InitializeComponent();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        /// <summary>
+        /// This is the event handler for the SplashScreen load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StartForm_Load(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = true;
+        }
+        /// <summary>
+        /// This is the event handler for the tick event of SplashTimer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashTimer_Tick(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = false;
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
         }
     }
 }

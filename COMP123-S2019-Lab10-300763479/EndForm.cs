@@ -16,5 +16,18 @@ namespace COMP123_S2019_Lab10_300763479
         {
             InitializeComponent();
         }
+
+        private void EndForm_Load(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
+        }
     }
 }
