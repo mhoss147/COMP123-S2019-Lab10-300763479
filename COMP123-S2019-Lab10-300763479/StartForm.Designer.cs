@@ -44,7 +44,7 @@
             this.Name = "StartForm";
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartForm";
+            this.Text = "Start Form";
             this.ResumeLayout(false);
 
         }
