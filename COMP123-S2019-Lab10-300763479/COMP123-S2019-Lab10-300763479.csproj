@@ -52,6 +52,7 @@
     <Compile Include="EndForm.Designer.cs">
       <DependentUpon>EndForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormName.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

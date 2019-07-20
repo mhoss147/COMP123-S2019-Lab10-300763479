@@ -16,18 +16,20 @@ namespace COMP123_S2019_Lab10_300763479
         {
             InitializeComponent();
         }
-
-        private void EndForm_Load(object sender, EventArgs e)
-        {
-        
-        }
-
+        /// <summary>
+        /// This is the event handler for the BackButton click event. EndForm disappear and MainForm appear
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
-
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+           Program.Forms[FormName.MAIN_FORM].Show();
             this.Hide();
         }
+        private void EndForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -20,6 +20,7 @@ namespace COMP123_S2019_Lab10_300763479
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            //Program.Forms[FormName.MAIN_FORM].Show();
             this.Hide();
         }
         /// <summary>
@@ -39,8 +40,7 @@ namespace COMP123_S2019_Lab10_300763479
         private void SplashTimer_Tick(object sender, EventArgs e)
         {
             SplashTimer.Enabled = false;
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+            Program.Forms[FormName.MAIN_FORM].Show();
             this.Hide();
         }
     }
